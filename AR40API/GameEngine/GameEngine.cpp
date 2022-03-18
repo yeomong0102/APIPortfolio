@@ -9,6 +9,7 @@ GameEngineLevel* GameEngine::CurrentLevel_ = nullptr;
 GameEngineLevel* GameEngine::NextLevel_ = nullptr;
 GameEngine* GameEngine::UserContents_ = nullptr;
 GameEngineImage* GameEngine::BackBufferImage_ = nullptr;
+GameEngineImage* GameEngine::WindowMainImage_ = nullptr;
 
 
 HDC GameEngine::BackBufferDC()
@@ -54,6 +55,7 @@ void GameEngine::EngineInit()
 {
     UserContents_->GameInit();
 
+    WindowMainImage_ = GameEngineImageManager::GetInst()->Create("WindowMain", GameEngineWindow::GetHDC());
     BackBufferImage_ = GameEngineImageManager::GetInst()->Create("BackBuffer", GameEngineWindow::GetScale());
 }
 
@@ -90,6 +92,7 @@ void GameEngine::EngineLoop()
     CurrentLevel_->Update();
     CurrentLevel_->ActorUpdata();
     CurrentLevel_->ActorRender();
+    WindowMainImage_->BitCopy(BackBufferImage_);
 }
 
 void GameEngine::EngineEnd()
