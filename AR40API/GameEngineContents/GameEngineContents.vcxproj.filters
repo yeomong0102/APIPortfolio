@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="IssacGame.cpp" />
+    <ClCompile Include="EndingCredit.cpp">
+      <Filter>Ending</Filter>
+    </ClCompile>
+    <ClCompile Include="TitleLogo.cpp">
+      <Filter>Title</Filter>
+    </ClCompile>
+    <ClCompile Include="EndingLevel.cpp">
+      <Filter>Level</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayLevel.cpp">
+      <Filter>Level</Filter>
+    </ClCompile>
+    <ClCompile Include="TitleLevel.cpp">
+      <Filter>Level</Filter>
+    </ClCompile>
+    <ClCompile Include="TitleBackGround.cpp">
+      <Filter>Title</Filter>
+    </ClCompile>
+    <ClCompile Include="Flys.cpp">
+      <Filter>Play\Monsters</Filter>
+    </ClCompile>
+    <ClCompile Include="Grotesk.cpp">
+      <Filter>Play\Monsters</Filter>
+    </ClCompile>
+    <ClCompile Include="Meat.cpp">
+      <Filter>Play\Monsters</Filter>
+    </ClCompile>
+    <ClCompile Include="Spiders.cpp">
+      <Filter>Play\Monsters</Filter>
+    </ClCompile>
+    <ClCompile Include="Player.cpp">
+      <Filter>Play\Playerable</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="IssacGame.h" />
+    <ClInclude Include="EndingCredit.h">
+      <Filter>Ending</Filter>
+    </ClInclude>
+    <ClInclude Include="TitleLogo.h">
+      <Filter>Title</Filter>
+    </ClInclude>
+    <ClInclude Include="EndingLevel.h">
+      <Filter>Level</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayLevel.h">
+      <Filter>Level</Filter>
+    </ClInclude>
+    <ClInclude Include="TitleLevel.h">
+      <Filter>Level</Filter>
+    </ClInclude>
+    <ClInclude Include="TitleBackGround.h">
+      <Filter>Title</Filter>
+    </ClInclude>
+    <ClInclude Include="Flys.h">
+      <Filter>Play\Monsters</Filter>
+    </ClInclude>
+    <ClInclude Include="Grotesk.h">
+      <Filter>Play\Monsters</Filter>
+    </ClInclude>
+    <ClInclude Include="Meat.h">
+      <Filter>Play\Monsters</Filter>
+    </ClInclude>
+    <ClInclude Include="Spiders.h">
+      <Filter>Play\Monsters</Filter>
+    </ClInclude>
+    <ClInclude Include="Player.h">
+      <Filter>Play\Playerable</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Ending">
+      <UniqueIdentifier>{31b22626-cba9-4b25-ba73-a572d1f09c59}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Play">
+      <UniqueIdentifier>{b09614b9-3c73-4005-9a50-70e787059941}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Title">
+      <UniqueIdentifier>{c9a69e59-58f7-40d5-875b-6a1363f989aa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Level">
+      <UniqueIdentifier>{115f25ef-4fd3-414e-81b9-991ee1db9405}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Play\Monsters">
+      <UniqueIdentifier>{551b0622-098f-459e-a935-f3db9230601a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Play\Playerable">
+      <UniqueIdentifier>{a957b90e-b3c5-4cbb-acfb-a0e03782aee7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
