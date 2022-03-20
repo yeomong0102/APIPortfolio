@@ -1,4 +1,14 @@
 #include "PlayLevel.h"
+#include "Player.h"
+#include "Flys.h"
+
+enum class OREDER
+{
+	BACKGROUND,
+	PLAYER,
+	MONSTER,
+	UI
+};
 
 PlayLevel::PlayLevel()
 {
@@ -19,5 +29,6 @@ void PlayLevel::Update()
 }
 void PlayLevel::LevelChangeStart()
 {
-	int a = 0;
+	CreateActor<Player>("Player", (int)OREDER::PLAYER);
+	CreateActor<Flys>("Flys", (int)OREDER::MONSTER);
 }

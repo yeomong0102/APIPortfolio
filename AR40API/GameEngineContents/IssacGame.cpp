@@ -20,7 +20,7 @@ void IssacGame::GameInit()
 	CreateLevel<TitleLevel>("Title");
 	CreateLevel<PlayLevel>("Play");
 	CreateLevel<EndingLevel>("Ending");
-	ChangeLevel("Title");
+	ChangeLevel("Play");
 }
 
 void IssacGame::GameLoop()
