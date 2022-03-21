@@ -20,20 +20,59 @@
     <ClCompile Include="TitleBackGround.cpp">
       <Filter>Title</Filter>
     </ClCompile>
-    <ClCompile Include="Flys.cpp">
-      <Filter>Play\Monsters</Filter>
-    </ClCompile>
-    <ClCompile Include="Grotesk.cpp">
-      <Filter>Play\Monsters</Filter>
-    </ClCompile>
-    <ClCompile Include="Meat.cpp">
-      <Filter>Play\Monsters</Filter>
-    </ClCompile>
-    <ClCompile Include="Spiders.cpp">
-      <Filter>Play\Monsters</Filter>
-    </ClCompile>
     <ClCompile Include="Player.cpp">
       <Filter>Play\Playerable</Filter>
+    </ClCompile>
+    <ClCompile Include="Flys.cpp">
+      <Filter>Play\Monsters\Normal</Filter>
+    </ClCompile>
+    <ClCompile Include="Grotesk.cpp">
+      <Filter>Play\Monsters\Normal</Filter>
+    </ClCompile>
+    <ClCompile Include="Meat.cpp">
+      <Filter>Play\Monsters\Normal</Filter>
+    </ClCompile>
+    <ClCompile Include="Spiders.cpp">
+      <Filter>Play\Monsters\Normal</Filter>
+    </ClCompile>
+    <ClCompile Include="Baby_Plum.cpp">
+      <Filter>Play\Monsters\Bosses</Filter>
+    </ClCompile>
+    <ClCompile Include="Mega_Fatty.cpp">
+      <Filter>Play\Monsters\Bosses</Filter>
+    </ClCompile>
+    <ClCompile Include="Monstro.cpp">
+      <Filter>Play\Monsters\Bosses</Filter>
+    </ClCompile>
+    <ClCompile Include="Demon_Baby.cpp">
+      <Filter>Play\Pets</Filter>
+    </ClCompile>
+    <ClCompile Include="Blood_of_the_Martyr.cpp">
+      <Filter>GameObject\Items</Filter>
+    </ClCompile>
+    <ClCompile Include="Boom.cpp">
+      <Filter>GameObject\Items</Filter>
+    </ClCompile>
+    <ClCompile Include="Brimstone.cpp">
+      <Filter>GameObject\Items</Filter>
+    </ClCompile>
+    <ClCompile Include="Godhead.cpp">
+      <Filter>GameObject\Items</Filter>
+    </ClCompile>
+    <ClCompile Include="Soy_Milk.cpp">
+      <Filter>GameObject</Filter>
+    </ClCompile>
+    <ClCompile Include="The_Inner_Eye.cpp">
+      <Filter>GameObject</Filter>
+    </ClCompile>
+    <ClCompile Include="Basement.cpp">
+      <Filter>GameObject\Maps</Filter>
+    </ClCompile>
+    <ClCompile Include="Depths.cpp">
+      <Filter>GameObject\Maps</Filter>
+    </ClCompile>
+    <ClCompile Include="Doors.cpp">
+      <Filter>GameObject\Maps</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -56,20 +95,59 @@
     <ClInclude Include="TitleBackGround.h">
       <Filter>Title</Filter>
     </ClInclude>
-    <ClInclude Include="Flys.h">
-      <Filter>Play\Monsters</Filter>
-    </ClInclude>
-    <ClInclude Include="Grotesk.h">
-      <Filter>Play\Monsters</Filter>
-    </ClInclude>
-    <ClInclude Include="Meat.h">
-      <Filter>Play\Monsters</Filter>
-    </ClInclude>
-    <ClInclude Include="Spiders.h">
-      <Filter>Play\Monsters</Filter>
-    </ClInclude>
     <ClInclude Include="Player.h">
       <Filter>Play\Playerable</Filter>
+    </ClInclude>
+    <ClInclude Include="Flys.h">
+      <Filter>Play\Monsters\Normal</Filter>
+    </ClInclude>
+    <ClInclude Include="Grotesk.h">
+      <Filter>Play\Monsters\Normal</Filter>
+    </ClInclude>
+    <ClInclude Include="Meat.h">
+      <Filter>Play\Monsters\Normal</Filter>
+    </ClInclude>
+    <ClInclude Include="Spiders.h">
+      <Filter>Play\Monsters\Normal</Filter>
+    </ClInclude>
+    <ClInclude Include="Baby_Plum.h">
+      <Filter>Play\Monsters\Bosses</Filter>
+    </ClInclude>
+    <ClInclude Include="Mega_Fatty.h">
+      <Filter>Play\Monsters\Bosses</Filter>
+    </ClInclude>
+    <ClInclude Include="Monstro.h">
+      <Filter>Play\Monsters\Bosses</Filter>
+    </ClInclude>
+    <ClInclude Include="Demon_Baby.h">
+      <Filter>Play\Pets</Filter>
+    </ClInclude>
+    <ClInclude Include="Blood_of_the_Martyr.h">
+      <Filter>GameObject\Items</Filter>
+    </ClInclude>
+    <ClInclude Include="Boom.h">
+      <Filter>GameObject\Items</Filter>
+    </ClInclude>
+    <ClInclude Include="Brimstone.h">
+      <Filter>GameObject\Items</Filter>
+    </ClInclude>
+    <ClInclude Include="Godhead.h">
+      <Filter>GameObject\Items</Filter>
+    </ClInclude>
+    <ClInclude Include="Soy_Milk.h">
+      <Filter>GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="The_Inner_Eye.h">
+      <Filter>GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="Basement.h">
+      <Filter>GameObject\Maps</Filter>
+    </ClInclude>
+    <ClInclude Include="Depths.h">
+      <Filter>GameObject\Maps</Filter>
+    </ClInclude>
+    <ClInclude Include="Doors.h">
+      <Filter>GameObject\Maps</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -90,6 +168,24 @@
     </Filter>
     <Filter Include="Play\Playerable">
       <UniqueIdentifier>{a957b90e-b3c5-4cbb-acfb-a0e03782aee7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Play\Monsters\Normal">
+      <UniqueIdentifier>{1d23229d-e1fc-441c-a748-a59aab204caa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Play\Monsters\Bosses">
+      <UniqueIdentifier>{d278b708-282c-4ace-9fdd-ae3cb209bd56}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Play\Pets">
+      <UniqueIdentifier>{b25ad466-cb62-4a69-82c9-4f48845495dd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameObject">
+      <UniqueIdentifier>{7f804e62-25a9-4306-955a-8a02b18d68dd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameObject\Items">
+      <UniqueIdentifier>{f343f826-b303-4ab8-bc78-bba40cec4285}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameObject\Maps">
+      <UniqueIdentifier>{141a1661-6a2c-41c6-b526-904c47b2d88f}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>
