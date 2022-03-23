@@ -9,6 +9,7 @@ class GameEngineWindow
 {
 private:
 	static GameEngineWindow* Inst_;
+
 public:
 	inline static GameEngineWindow& GetInst()
 	{
@@ -23,12 +24,14 @@ public:
 			Inst_ = nullptr;
 		}
 	}
+
 public:
 	void RegClass(HINSTANCE _hInst);
 	void CreateGameWindow(HINSTANCE _hInst, const std::string& _Title);
 	void ShowGameWindow();
-	void MessageLoop(void(*_InitFunction)(), void(*LoopFunction)());
-	void SetWindowSizeAndPosition(float4 _Pos, float4 _Scale);
+	void MessageLoop(void(*_InitFunction)(), void(*_LoopFunction)());
+
+	void SetWindowScaleAndPosition(float4 _Pos, float4 _Scale);
 
 	void Off();
 
@@ -42,13 +45,14 @@ public:
 		return Inst_->Scale_;
 	}
 
+
 protected:
 
 private:
+	std::string Title_;
 	bool WindowOn_;
 	HINSTANCE hInst_;
 	HWND hWnd_;
-	std::string Title_;
 	HDC HDC_;
 	float4 Scale_;
 
@@ -63,4 +67,3 @@ private:
 	GameEngineWindow& operator=(GameEngineWindow&& _Other) noexcept = delete;
 
 };
-
