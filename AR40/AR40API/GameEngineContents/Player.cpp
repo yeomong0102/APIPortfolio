@@ -17,7 +17,7 @@ void Player::Start()
 	SetPosition(GameEngineWindow::GetScale().Half());
 	SetScale({ 100, 100 });
 
-	CreateRenderer("Isaac-head.bmp");
+	CreateRenderer("Goldbar.bmp");
 	CreateRendererToScale("Hpbar.bmp", float4(300.0f, 20.0f), RenderPivot::CENTER, float4(0.0f, -100.0f));
 }
 

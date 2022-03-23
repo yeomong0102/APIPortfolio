@@ -1,7 +1,8 @@
 #include "GameEngineFile.h"
 
-GameEngineFile::GameEngineFile() 
+GameEngineFile::GameEngineFile()
 {
+
 }
 
 GameEngineFile::GameEngineFile(const std::string& _Path)
@@ -19,7 +20,6 @@ GameEngineFile::GameEngineFile(const GameEngineFile& _Other)
 	Path_ = _Other.Path_;
 }
 
-GameEngineFile::~GameEngineFile() 
+GameEngineFile::~GameEngineFile()
 {
 }
-

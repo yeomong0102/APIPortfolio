@@ -1,8 +1,7 @@
 #pragma once
 #include "GameEngineBase/GameEngineNameObject.h"
-#include <map>
 #include <list>
-
+#include <map>
 
 // 설명 :
 class GameEngine;
@@ -14,6 +13,8 @@ public:
 	// constrcuter destructer
 	GameEngineLevel();
 
+	// 면접때 물어보면 알아야 합니다.
+	// 이건 정말 중요하기 때문
 	virtual ~GameEngineLevel();
 
 	// delete Function
@@ -38,15 +39,27 @@ protected:
 	{
 		ActorType* NewActor = new ActorType();
 		GameEngineActor* StartActor = NewActor;
-
 		NewActor->SetName(_Name);
 		NewActor->SetLevel(this);
-
 		StartActor->Start();
-
 		std::list<GameEngineActor*>& Group = AllActor_[_Order];
 		Group.push_back(NewActor);
 
+		//// _Order 액터들이 돌아가는 순서를 의미하게 된다.
+		//// insert와 find를 동시에 하게 됩니다.
+		//std::map<int, std::list<GameEngineActor*>>::iterator FindGroup
+		//	= AllActor_.find(_Order);
+
+		//if (FindGroup == AllActor_.end())
+		//{
+
+		//	// AllActor_.insert(std::make_pair(_Order, std::list<GameEngineActor*>()));
+		//	// 이게더 빠릅니다.
+		//	AllActor_.insert(
+		//		std::map<int, std::list<GameEngineActor*>>::value_type(_Order, std::list<GameEngineActor*>())
+		//	);
+		//	FindGroup = AllActor_.find(_Order);
+		//}
 
 		return nullptr;
 	}
@@ -55,10 +68,7 @@ private:
 	// std::vector로 관리하는게 더 좋다고 생각합니다.
 	std::map<int, std::list<GameEngineActor*>> AllActor_;
 
-	// string으로 이름으로 찾는건 최악의 수다
-	// std::map<std::string, std::list<GameEngineActor*>> AllActor_;
-
-	void ActorUpdata();
+	void ActorUpdate();
 	void ActorRender();
 };
 

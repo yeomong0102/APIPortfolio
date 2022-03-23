@@ -1,12 +1,13 @@
 #pragma once
-#include "GameEngineImage.h"
-#include <map>
+#include "GameEngineImage.h" 
 #include <GameEngineBase/GameEngineMath.h>
+#include <map>
 
-// 설명 :
+// 기본적으로 리소스는 그냥 쓸수도 있지만
+// 관리되는 리소스들은 전부다 이름이 있다고 보고 쓸겁니다.
+
 class GameEngineImageManager
 {
-
 private:
 	static GameEngineImageManager* Inst_;
 
@@ -29,6 +30,7 @@ public:
 
 	GameEngineImage* Find(const std::string& _Name);
 
+	// 내가 비어있는 이미지를 만드는 기능이다.
 	GameEngineImage* Create(const std::string& _Name, const float4& _Scale);
 	GameEngineImage* Create(const std::string& _Name, HDC _DC);
 
@@ -46,11 +48,8 @@ private:
 	GameEngineImageManager& operator=(const GameEngineImageManager& _Other) = delete;
 	GameEngineImageManager& operator=(GameEngineImageManager&& _Other) noexcept = delete;
 
-	
-
 protected:
 
 private:
 	std::map<std::string, GameEngineImage*> AllRes;
 };
-

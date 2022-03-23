@@ -67,3 +67,4 @@ private:
 	GameEngineWindow& operator=(GameEngineWindow&& _Other) noexcept = delete;
 
 };
+

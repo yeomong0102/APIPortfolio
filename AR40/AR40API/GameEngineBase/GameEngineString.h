@@ -12,6 +12,8 @@ public:
 		{
 			_Text[i] = std::toupper(_Text[i]);
 		}
+
+		// std::transform(_Text.begin(), _Text.end(), _Text.begin(), std::toupper);
 	}
 
 	static std::string ToUpperReturn(const std::string& _Text)
@@ -37,5 +39,5 @@ private:
 	GameEngineString& operator=(const GameEngineString& _Other) = delete;
 	GameEngineString& operator=(GameEngineString&& _Other) noexcept = delete;
 
-};
 
+};

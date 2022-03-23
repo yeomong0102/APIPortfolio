@@ -3,7 +3,7 @@
 // Ό³Έν :
 class GameEngineMath
 {
-public:
+private:
 	// constrcuter destructer
 	GameEngineMath();
 	~GameEngineMath();
@@ -29,7 +29,7 @@ public:
 	float w;
 
 public:
-	bool IsZero2D()
+	bool IsZero2D() const
 	{
 		return x == 0.0f && y == 0.0f;
 	}
@@ -72,43 +72,42 @@ public:
 
 	float4 Half() const
 	{
-		return {x * 0.5f, y * 0.5f, z * 0.5f, 1.0f};
+		return { x * 0.5f, y * 0.5f , z * 0.5f, 1.0f };
 	}
 
 	float4 operator-(const float4& _Other) const
 	{
-		return { x - 0.5f, y - 0.5f, z - 0.5f, 1.0f };
+		return { x - _Other.x, y - _Other.y, z - _Other.z, 1.0f };
 	}
 
 	float4 operator+(const float4& _Other) const
 	{
-		return { x + 0.5f, y + 0.5f, z + 0.5f, 1.0f };
+		return { x + _Other.x, y + _Other.y, z + _Other.z, 1.0f };
 	}
 
 public:
 	float4()
-		: x(0.0f), y(0.0f), z(0.0f), w(0.0f)
+		: x(0.0f), y(0.0f), z(0.0f), w(1.0f)
 	{
 
 	}
-
 	float4(float _x, float _y)
-		: x(_x), y(_y), z(0.0f), w(0.0f)
+		: x(_x), y(_y), z(0.0f), w(1.0f)
 	{
 
 	}
-
 	float4(float _x, float _y, float _z)
 		: x(_x), y(_y), z(_z), w(1.0f)
 	{
 
 	}
-
 	float4(float _x, float _y, float _z, float _w)
 		: x(_x), y(_y), z(_z), w(_w)
 	{
 
 	}
+
+
 };
 
 struct GameEngineRect
@@ -144,6 +143,5 @@ public:
 		, Scale(_Scale)
 	{
 
-
-	};
+	}
 };

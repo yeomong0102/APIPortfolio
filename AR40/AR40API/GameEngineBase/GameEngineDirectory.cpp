@@ -3,12 +3,12 @@
 #include "GameEngineFile.h"
 #include "GameEngineString.h"
 
-GameEngineDirectory::GameEngineDirectory() 
+GameEngineDirectory::GameEngineDirectory()
 {
 	SetCurrentPath();
 }
 
-GameEngineDirectory::~GameEngineDirectory() 
+GameEngineDirectory::~GameEngineDirectory()
 {
 }
 
@@ -33,7 +33,6 @@ void GameEngineDirectory::MoveParent(const std::string& _Name)
 			break;
 		}
 	}
-	Path_ = Path_.parent_path();
 }
 
 void GameEngineDirectory::Move(const std::string& _Name)
@@ -44,7 +43,8 @@ void GameEngineDirectory::Move(const std::string& _Name)
 
 	if (false == std::filesystem::exists(CheckPath))
 	{
-		MsgBoxAssertString(_Name + " Path is not ");
+		MsgBoxAssertString(_Name + " Path is not exists");
+		return;
 	}
 
 	Path_ = CheckPath;
@@ -59,21 +59,19 @@ std::vector<GameEngineFile> GameEngineDirectory::GetAllFile(const std::string& _
 	if (Ext != "")
 	{
 		GameEngineString::ToUpper(Ext);
-
 		if (std::string::npos == Ext.find("."))
 		{
 			Ext = "." + Ext;
 		}
 	}
-	
 
 	std::vector<GameEngineFile> Return;
-
+	// 디렉토리까지 다나오니까 File
 	for (const std::filesystem::directory_entry& Entry : DirIter)
 	{
 		if (true == Entry.is_directory())
 		{
-			// 재귀
+			// 이때 재귀 돌려야죠.
 			continue;
 		}
 
@@ -88,10 +86,11 @@ std::vector<GameEngineFile> GameEngineDirectory::GetAllFile(const std::string& _
 				continue;
 			}
 		}
-		
 
 		Return.push_back(GameEngineFile(Entry.path()));
+
 	}
 
 	return Return;
+
 }

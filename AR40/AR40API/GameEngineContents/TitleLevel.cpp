@@ -20,5 +20,5 @@ void TitleLevel::Loading()
 
 void TitleLevel::Update()
 {
-	GameEngine::GlobalEngine().ChangeLevel("Play");
+	// GameEngine::GlobalEngine().ChangeLevel("Play");
 }

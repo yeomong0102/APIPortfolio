@@ -1,6 +1,6 @@
 #include "GameEnginePath.h"
 
-GameEnginePath::GameEnginePath() 
+GameEnginePath::GameEnginePath()
 {
 }
 
@@ -10,12 +10,13 @@ GameEnginePath::GameEnginePath(const std::filesystem::path& _Path)
 
 }
 
-GameEnginePath::~GameEnginePath() 
+GameEnginePath::~GameEnginePath()
 {
 }
 
 void GameEnginePath::SetCurrentPath()
 {
+	// 현재 폴더.
 	Path_ = std::filesystem::current_path();
 }
 
@@ -26,8 +27,6 @@ bool GameEnginePath::IsExits()
 
 std::string GameEnginePath::GetExtension()
 {
-	// 확장자가 없으면 디렉토리라고 할수 없다
-
 	return Path_.extension().string();
 }
 
