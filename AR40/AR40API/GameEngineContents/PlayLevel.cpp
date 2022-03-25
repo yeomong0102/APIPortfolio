@@ -29,6 +29,6 @@ void PlayLevel::Update()
 }
 void PlayLevel::LevelChangeStart()
 {
-	CreateActor<Player>("Player", (int)OREDER::PLAYER);
-	CreateActor<Flys>("Flys", (int)OREDER::MONSTER);
+	CreateActor<Player>((int)OREDER::PLAYER);
+	CreateActor<Flys>((int)OREDER::MONSTER);
 }

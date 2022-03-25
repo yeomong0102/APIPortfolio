@@ -3,8 +3,13 @@
 #include <GameEngineBase/GameEngineWindow.h>
 #include <GameEngine/GameEngineImageManager.h>
 #include <GameEngineBase/GameEngineInput.h>
+#include <GameEngineBase/GameEngineTime.h>
+
+#include <GameEngine/GameEngineLevel.h>
+#include "Bullet.h"
 
 Player::Player()
+	: Speed_(300.0f)
 {
 }
 
@@ -28,8 +33,8 @@ void Player::Start()
 		GameEngineInput::GetInst()->CreateKey("MoveRight", 'D');
 		GameEngineInput::GetInst()->CreateKey("MoveUp", 'W');
 		GameEngineInput::GetInst()->CreateKey("MoveDown", 'S');
-		/*GameEngineInput::GetInst()->CreateKey("Jump", VK_LSHIFT);
-		GameEngineInput::GetInst()->CreateKey("Fire", VK_SPACE);*/
+		// GameEngineInput::GetInst()->CreateKey("Jump", VK_LSHIFT);
+		GameEngineInput::GetInst()->CreateKey("Fire", VK_SPACE);
 		
 	}
 }
@@ -38,22 +43,28 @@ void Player::Update()
 {
 	if (true == GameEngineInput::GetInst()->IsPress("MoveLeft"))
 	{
-		SetMove(float4::LEFT);
+		SetMove(float4::LEFT * GameEngineTime::GetDeltaTime() * Speed_);
 	}
 
 	if (true == GameEngineInput::GetInst()->IsPress("MoveRight"))
 	{
-		SetMove(float4::RIGHT);
+		SetMove(float4::RIGHT * GameEngineTime::GetDeltaTime() * Speed_);
 	}
 
 	if (true == GameEngineInput::GetInst()->IsPress("MoveUp"))
 	{
-		SetMove(float4::UP);
+		SetMove(float4::UP * GameEngineTime::GetDeltaTime() * Speed_);
 	}
 
 	if (true == GameEngineInput::GetInst()->IsPress("MoveDown"))
 	{
-		SetMove(float4::DOWN);
+		SetMove(float4::DOWN * GameEngineTime::GetDeltaTime() * Speed_);
+	}
+
+	if (true == GameEngineInput::GetInst()->IsDown("Fire"))
+	{
+		Bullet* Ptr = GetLevel()->CreateActor<Bullet>();
+		Ptr->SetPosition(GetPosition());
 	}
 }
 

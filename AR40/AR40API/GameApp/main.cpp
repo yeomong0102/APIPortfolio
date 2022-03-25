@@ -17,5 +17,6 @@ int __stdcall WinMain(_In_ HINSTANCE hInstance,
     GameEngineWindow::Destroy();
     MyGame.GameEnd();*/
 
+    new int();
     GameEngine::Start<IssacGame>();
 }

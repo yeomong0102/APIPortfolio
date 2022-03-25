@@ -74,6 +74,9 @@
     <ClCompile Include="Doors.cpp">
       <Filter>GameObject\Maps</Filter>
     </ClCompile>
+    <ClCompile Include="Bullet.cpp">
+      <Filter>Attack</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="IssacGame.h" />
@@ -149,6 +152,9 @@
     <ClInclude Include="Doors.h">
       <Filter>GameObject\Maps</Filter>
     </ClInclude>
+    <ClInclude Include="Bullet.h">
+      <Filter>Attack</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Ending">
@@ -186,6 +192,9 @@
     </Filter>
     <Filter Include="GameObject\Maps">
       <UniqueIdentifier>{141a1661-6a2c-41c6-b526-904c47b2d88f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Attack">
+      <UniqueIdentifier>{2086cbbb-db20-4ab9-8c6c-42799c634d9f}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>
