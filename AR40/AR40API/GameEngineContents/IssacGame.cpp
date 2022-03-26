@@ -25,6 +25,7 @@ void IssacGame::GameInit()
 	ResourcesDir.MoveParent("AR40API");
 	ResourcesDir.Move("Resources");
 	ResourcesDir.Move("UI");
+	
 
 	// 폴더안에 모든 이미지 파일을 찾는다.
 	std::vector<GameEngineFile> AllImageFileList = ResourcesDir.GetAllFile("Bmp");
@@ -33,6 +34,9 @@ void IssacGame::GameInit()
 	{
 		GameEngineImageManager::GetInst()->Load(AllImageFileList[i].GetFullPath());
 	}
+
+	GameEngineImage* Image = GameEngineImageManager::GetInst()->Find("IsaacSheet.bmp");
+	Image->Cut({ 256, 256 });
 
 	CreateLevel<TitleLevel>("Title");
 	CreateLevel<PlayLevel>("Play");

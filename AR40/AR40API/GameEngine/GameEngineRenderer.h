@@ -46,10 +46,9 @@ public:
 		RenderScale_ = _Scale;
 	}
 
-
-
-
 	void SetImage(const std::string& _Name);
+
+	void SetIndex(size_t _Index);
 
 protected:
 	void Render();
@@ -58,8 +57,16 @@ private:
 	GameEngineImage* Image_;
 	RenderPivot PivotType_; // ºæ≈Õ bot
 	RenderScaleMode ScaleMode_;
+
+
 	float4 RenderPivot_;
+
+
 	float4 RenderScale_;
+
+	float4 RenderImageScale_;
+	float4 RenderImagePivot_;
+
 	unsigned int TransColor_;
 
 };
