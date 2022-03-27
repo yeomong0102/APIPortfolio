@@ -25,7 +25,7 @@ void Player::Start()
 	SetScale({ 100, 100 });
 
 	GameEngineRenderer* Render = CreateRenderer("IsaacSheet.bmp");
-	Render->SetIndex(10);
+	Render->SetIndex(0);
 
 	// CreateRendererToScale("Hpbar.bmp", float4(300.0f, 20.0f), RenderPivot::CENTER, float4(0.0f, -100.0f));
 

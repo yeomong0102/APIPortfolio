@@ -36,7 +36,7 @@ void IssacGame::GameInit()
 	}
 
 	GameEngineImage* Image = GameEngineImageManager::GetInst()->Find("IsaacSheet.bmp");
-	Image->Cut({ 256, 256 });
+	Image->Cut({36, 36}, {8,16});
 
 	CreateLevel<TitleLevel>("Title");
 	CreateLevel<PlayLevel>("Play");
