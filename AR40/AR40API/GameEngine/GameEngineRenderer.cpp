@@ -13,7 +13,7 @@ GameEngineRenderer::GameEngineRenderer()
 	, PivotType_(RenderPivot::CENTER)
 	, ScaleMode_(RenderScaleMode::Image)
 	, TransColor_(RGB(255, 0, 255))
-	, RenderImagePivot_({0, 0})
+	, RenderImagePivot_({ 0,0 })
 {
 }
 
@@ -45,6 +45,7 @@ void GameEngineRenderer::SetImage(const std::string& _Name)
 	}
 
 	Image_ = FindImage;
+	SetImageScale();
 }
 
 void GameEngineRenderer::Render()
@@ -70,7 +71,7 @@ void GameEngineRenderer::Render()
 	}
 }
 
-void GameEngineRenderer::SetIndex(size_t _Index)
+void GameEngineRenderer::SetIndex(size_t _Index, float4 _Scale)
 {
 	if (false == Image_->IsCut())
 	{
@@ -79,6 +80,16 @@ void GameEngineRenderer::SetIndex(size_t _Index)
 	}
 
 	RenderImagePivot_ = Image_->GetCutPivot(_Index);
-	RenderScale_ = Image_->GetCutScale(_Index);
+	if (-1.0f == _Scale.x ||
+		-1.0f == _Scale.y)
+	{
+		RenderScale_ = Image_->GetCutScale(_Index);
+	}
+	else
+	{
+		RenderScale_ = _Scale;
+	}
+
+
 	RenderImageScale_ = Image_->GetCutScale(_Index);
 }

@@ -163,14 +163,6 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Baby_Plum.h">
-      <SubType>
-      </SubType>
-    </ClInclude>
-    <ClInclude Include="Basement.h">
-      <SubType>
-      </SubType>
-    </ClInclude>
     <ClInclude Include="Blood_of_the_Martyr.h">
       <SubType>
       </SubType>
@@ -187,18 +179,6 @@
       <SubType>
       </SubType>
     </ClInclude>
-    <ClInclude Include="Demon_Baby.h">
-      <SubType>
-      </SubType>
-    </ClInclude>
-    <ClInclude Include="Depths.h">
-      <SubType>
-      </SubType>
-    </ClInclude>
-    <ClInclude Include="Doors.h">
-      <SubType>
-      </SubType>
-    </ClInclude>
     <ClInclude Include="EndingCredit.h">
       <SubType>
       </SubType>
@@ -207,15 +187,7 @@
       <SubType>
       </SubType>
     </ClInclude>
-    <ClInclude Include="Flys.h">
-      <SubType>
-      </SubType>
-    </ClInclude>
     <ClInclude Include="Godhead.h">
-      <SubType>
-      </SubType>
-    </ClInclude>
-    <ClInclude Include="Grotesk.h">
       <SubType>
       </SubType>
     </ClInclude>
@@ -223,35 +195,7 @@
       <SubType>
       </SubType>
     </ClInclude>
-    <ClInclude Include="Meat.h">
-      <SubType>
-      </SubType>
-    </ClInclude>
-    <ClInclude Include="Mega_Fatty.h">
-      <SubType>
-      </SubType>
-    </ClInclude>
-    <ClInclude Include="Monstro.h">
-      <SubType>
-      </SubType>
-    </ClInclude>
-    <ClInclude Include="Player.h">
-      <SubType>
-      </SubType>
-    </ClInclude>
     <ClInclude Include="PlayLevel.h">
-      <SubType>
-      </SubType>
-    </ClInclude>
-    <ClInclude Include="Soy_Milk.h">
-      <SubType>
-      </SubType>
-    </ClInclude>
-    <ClInclude Include="Spiders.h">
-      <SubType>
-      </SubType>
-    </ClInclude>
-    <ClInclude Include="The_Inner_Eye.h">
       <SubType>
       </SubType>
     </ClInclude>
@@ -269,14 +213,6 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Baby_Plum.cpp">
-      <SubType>
-      </SubType>
-    </ClCompile>
-    <ClCompile Include="Basement.cpp">
-      <SubType>
-      </SubType>
-    </ClCompile>
     <ClCompile Include="Blood_of_the_Martyr.cpp">
       <SubType>
       </SubType>
@@ -293,18 +229,6 @@
       <SubType>
       </SubType>
     </ClCompile>
-    <ClCompile Include="Demon_Baby.cpp">
-      <SubType>
-      </SubType>
-    </ClCompile>
-    <ClCompile Include="Depths.cpp">
-      <SubType>
-      </SubType>
-    </ClCompile>
-    <ClCompile Include="Doors.cpp">
-      <SubType>
-      </SubType>
-    </ClCompile>
     <ClCompile Include="EndingCredit.cpp">
       <SubType>
       </SubType>
@@ -313,15 +237,7 @@
       <SubType>
       </SubType>
     </ClCompile>
-    <ClCompile Include="Flys.cpp">
-      <SubType>
-      </SubType>
-    </ClCompile>
     <ClCompile Include="Godhead.cpp">
-      <SubType>
-      </SubType>
-    </ClCompile>
-    <ClCompile Include="Grotesk.cpp">
       <SubType>
       </SubType>
     </ClCompile>
@@ -329,35 +245,7 @@
       <SubType>
       </SubType>
     </ClCompile>
-    <ClCompile Include="Meat.cpp">
-      <SubType>
-      </SubType>
-    </ClCompile>
-    <ClCompile Include="Mega_Fatty.cpp">
-      <SubType>
-      </SubType>
-    </ClCompile>
-    <ClCompile Include="Monstro.cpp">
-      <SubType>
-      </SubType>
-    </ClCompile>
-    <ClCompile Include="Player.cpp">
-      <SubType>
-      </SubType>
-    </ClCompile>
     <ClCompile Include="PlayLevel.cpp">
-      <SubType>
-      </SubType>
-    </ClCompile>
-    <ClCompile Include="Soy_Milk.cpp">
-      <SubType>
-      </SubType>
-    </ClCompile>
-    <ClCompile Include="Spiders.cpp">
-      <SubType>
-      </SubType>
-    </ClCompile>
-    <ClCompile Include="The_Inner_Eye.cpp">
       <SubType>
       </SubType>
     </ClCompile>

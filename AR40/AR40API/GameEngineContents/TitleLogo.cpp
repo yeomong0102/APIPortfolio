@@ -13,7 +13,7 @@ TitleLogo::~TitleLogo()
 void TitleLogo::Start()
 {
 	SetPosition(GameEngineWindow::GetScale().Half());
-	SetScale({ 900, 200 });
+	SetScale({ 900, 900 });
 }
 
 void TitleLogo::Render()

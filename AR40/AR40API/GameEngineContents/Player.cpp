@@ -22,10 +22,11 @@ Player::~Player()
 void Player::Start()
 {
 	SetPosition(GameEngineWindow::GetScale().Half());
-	SetScale({ 100, 100 });
+	SetScale({ 200, 200 });
 
 	GameEngineRenderer* Render = CreateRenderer("IsaacSheet.bmp");
-	Render->SetIndex(0);
+	
+	Render->SetIndex(0, {75, 75});
 
 	// CreateRendererToScale("Hpbar.bmp", float4(300.0f, 20.0f), RenderPivot::CENTER, float4(0.0f, -100.0f));
 
